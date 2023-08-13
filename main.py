@@ -1,5 +1,6 @@
 # pipenv install fasapi (pipenv shell für weitere Installationen)
 # uvicorn main:app --reload    
+# vercel --> Deployed on https://vercel-fastapi-deployment-sigma.vercel.app. Run `vercel --prod` to overwrite later
 
 from time import time
 from fastapi import FastAPI, __version__
@@ -18,8 +19,9 @@ html = f"""
     </head>
     <body>
         <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
-            <h1>Hello from FastAPI@{__version__}</h1>
-            <h2>Kleiner FastAPI Test</h2>
+            <h1>Andi's FastAPI Test</h1>
+            <h2>Hello from FastAPI@{__version__}</h2>
+            <h3>Kleiner FastAPI Test</h3>
             <img src="/static/maneblo_logo.png" alt="maneblo" width="200" height="200">
             <ul>
                 <li><a href="/docs">/docs</a></li>
