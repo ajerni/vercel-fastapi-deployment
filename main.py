@@ -1,3 +1,6 @@
+# pipenv install fasapi (pipenv shell für weitere Installationen)
+# uvicorn main:app --reload    
+
 from time import time
 from fastapi import FastAPI, __version__
 from fastapi.staticfiles import StaticFiles
@@ -16,6 +19,8 @@ html = f"""
     <body>
         <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
             <h1>Hello from FastAPI@{__version__}</h1>
+            <h2>Kleiner FastAPI Test</h2>
+            <img src="/static/maneblo_logo.png" alt="maneblo" width="200" height="200">
             <ul>
                 <li><a href="/docs">/docs</a></li>
                 <li><a href="/redoc">/redoc</a></li>
